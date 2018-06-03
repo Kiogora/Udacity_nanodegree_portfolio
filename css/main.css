@@ -1,0 +1,50 @@
+/* HTML styles to html attributes */
+
+/* Catchall-Prevents overflowing of the following elements from their parent container*/
+img, embed, object video {
+    max-width: 100%
+}
+
+/* CSS sytles-classes and IDs */
+
+/* Media queries */
+
+/* Anything below 450px or 4.6 inch width- phones*/
+@media screen and (minwidth: 450px){
+    .work-content-95177ffb-497c, .work-content-5af8dd52-3d2a {
+        width: 50%;
+    }
+}
+
+/* Anything below 550px or 5.7 inch -Tablets*/
+@media screen and (minwidth: 550px){
+    .work-content-95177ffb-497c, .work-content-5af8dd52-3d2a .work-content-dfb2c63f-1ccf{
+        width: 33.33333%;
+    }
+}
+
+/* Anything below 800px or 8.3 inch -TV, computer screens etc*/
+@media screen and (minwidth: 700px){
+    .container{
+        width:700px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100%;
+}
+
+.project-img{
+
+}
+
+.img-with-text {
+    text-align: justify;
+}

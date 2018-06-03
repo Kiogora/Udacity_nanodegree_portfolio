@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Initial Test</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Initial Test</title>
+        <!-- Load stylesheet after text encoding, viewport setting and browser title parsing, but before webpage itself-->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
+        <!-- Minimum requirements
+        1. At least 4 images
+        2. Title text (h1, h2, etc.)
+        3. Regular (paragraph) text
+        4. A logo. -->
         <!--> Main Container<-->
-        <div class="container-fluid">
+        <div class="container">
             <!--> Header<-->
-            <div>
-            </div>
-            <!-->Main image<-->
-            <div>
-            </div>
-            <!-->Featured work title<-->
-            <div>
-            </div>
-            <!-->Featured works, what happens to layout if they become numerous?<-->
-            <div>
-            </div>
+            <!-- <header class="header"> -->
+                <div class="box header">
+                    <!-- >Header logo -->
+                    <!-- Photo by Stefan Straka from Pexels https://www.pexels.com/photo/close-up-photography-of-white-desk-lamp-823841/ -->
+                    <!-- <img class="header-logo" src="images/logo.jpg" alt="logo"> -->
+                    <h1 class="header-title ">Alois Mbutura</h1>
+                    <p class="Occupational-role">Frontend Ninja</p>
+                </div>
+            <!-- </header> -->
+            <main>
+                <!-- <div class="box image"> -->
+                    <!-- Insert background image via CSS, maintaining aspect ratio to the device viewport width -->
+                <!-- </div> -->
+                <div class="box works_heading">
+                    <!-- Featured work heading -->
+                    <h2 class="Featured-work">Featured work</h2>
+                </div>
+                <!-- Featured work content -->
+                <!-- As the content here may be much, we limit the column content to 3 at the widest viewport and 1 at most narrow -->
+                <!-- == At much wider viewports, we add margins to limit further expansion-->
+                <div class="box img-with-text work-content-95177ffb-497c">
+                    <img class="project-img" src="./images/header-img.jpg" alt="sometext" />
+                    <a href="">First placeholder</a>
+                </div>
+                <div class="box img-with-text work-content-5af8dd52-3d2a">
+                    <img class="project-img" src="./images/header-img.jpg" alt="sometext" />
+                    <a href="">Second placeholder</a>
+                </div>
+                <div class="box img-with-text work-content-dfb2c63f-1ccf">
+                    <img class="project-img" src="./images/header-img.jpg" alt="sometext" />
+                    <a href="">Third placeholder</a>
+                </div>
+            </main>
         </div>
     </body>
 </html>
