@@ -1,50 +1,231 @@
 /* HTML styles to html attributes */
 
+/**************************************************************************************/
+/* CATCH-ALL SECTION */
 /* Catchall-Prevents overflowing of the following elements from their parent container*/
+
+/* global HTML Element default styles */
 img, embed, object video {
     max-width: 100%
 }
 
+article, aside, details, figcaption, figure, footer, header, main, nav, section{
+    display: block;
+}
+
+.hr{
+    color: #7d97ad;
+    background-color: white;
+}
+
+/**************************************************************************************/
 /* CSS sytles-classes and IDs */
-
-/* Media queries */
-
-/* Anything below 450px or 4.6 inch width- phones*/
-@media screen and (minwidth: 450px){
-    .work-content-95177ffb-497c, .work-content-5af8dd52-3d2a {
-        width: 50%;
-    }
-}
-
-/* Anything below 550px or 5.7 inch -Tablets*/
-@media screen and (minwidth: 550px){
-    .work-content-95177ffb-497c, .work-content-5af8dd52-3d2a .work-content-dfb2c63f-1ccf{
-        width: 33.33333%;
-    }
-}
-
-/* Anything below 800px or 8.3 inch -TV, computer screens etc*/
-@media screen and (minwidth: 700px){
-    .container{
-        width:700px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/* DEFAULT STYLES-SMALL VIEWPORT PRIORITY*/
 .box {
     width: 100%;
 }
 
-.project-img{
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-image-container{
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.header-content-container{
+    width: 100%;
+}
+
+.header-heading{
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: normal;
+    color: #7d97ad;
+    display: block;
+}
+
+.Occupational-role{
+    text-align: center;
+    font-family: 'Armata', sans-serif;
+    font-weight: normal;
+    color: #2d3c49;
+    display: block; 
 
 }
 
-.img-with-text {
-    text-align: justify;
+.main-img {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.work-heading-container {
+    text-align: center;   
+}
+
+.featured-work-heading {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: normal;
+    color: #7d97ad;
+}
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+}
+
+.list-item{
+    width: 100%;
+}
+
+.project-img{
+    width: 100%;
+    border-radius: 1%;
+}
+
+.entry-link{
+    display: block;
+    font-family: 'Armata', sans-serif;
+    text-align: center;
+}
+
+.footer-text{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #2d3c49;
+}
+
+.footer-container {
+    text-align: center;
+}
+/**************************************************************************************/
+/* Media queries and breakpoints*/
+/* Anything below 450px or 4.6 inch width- phones*/
+@media screen and (min-width: 450px) and (max-width:649px){
+    /* .list-item-col-2, .list-item-col-3{
+        width: 50%;
+    } */
+
+    .list-item-col-1, .list-item-col-3{
+        width: 100%;
+    }
+
+    .header-image-container{
+        width: 20%;
+        margin-left: 0px;
+        display: block;
+    }
+    
+    .header-content-container{
+        width: 100%;
+    }
+
+    .header-heading{
+        text-align: right;
+        display: block;
+    }
+
+    .Occupational-role{
+        text-align: right;
+        display: block;
+    }
+
+    .work-heading-container {
+        text-align: left;   
+    }
+
+    .footer-container{
+        text-align: left;
+    }
+    /* .work-content-col-1, .work-content-col-2 {
+        width: 50%;
+    }    */
+}
+
+/* Anything below 550px or 5.7 inch -Tablets*/
+@media screen and (min-width: 650px) and (max-width:959px){
+    /* .list-item-col-2, .list-item-col-3{
+        width: 50%;
+    } */
+
+    .list-item-col-1, .list-item-col-3{
+        width: 100%;
+    }
+
+    .header-image-container{
+        width: 20%;
+        margin-left:inherit;
+    }
+    
+    .header-content-container{
+        width: 80%;
+    }
+
+    .header-heading{
+        text-align: right;
+    }
+
+    .Occupational-role{
+        text-align: right;    
+    }
+
+    .work-heading-container {
+        text-align: left;   
+    }
+
+    .footer-container{
+        text-align: left;
+    }
+    /* .work-content-col-1, .work-content-col-2, .work-content-col-3{
+        width: 33.33333%;
+    } */
+}
+
+/* Anything below 800px or 8.3 inch -TV, computer screens etc*/
+@media screen and (min-width: 960px){
+    .main-container{
+        width: 960px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    /* .list-item-col-2, .list-item-col-3{
+        width: 50%;
+    } */
+
+    .list-item-col-1, .list-item-col-3{
+        width: 100%;
+    }
+    
+    .header-image-container{
+        width: 20%;
+    }
+    
+    .header-content-container{
+        width: 80%;
+    }
+
+    .header-heading{
+        text-align: right;
+    }
+
+
+    .Occupational-role{
+        text-align: right;    
+    }
+
+
+    .Occupational-role{
+        text-align: right;    
+    }
+
+    .work-heading-container {
+        text-align: left;   
+    }
 }

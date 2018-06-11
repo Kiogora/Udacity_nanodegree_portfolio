@@ -6,50 +6,70 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> Initial Test</title>
         <!-- Load stylesheet after text encoding, viewport setting and browser title parsing, but before webpage itself-->
+        <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-        <!-- Minimum requirements
-        1. At least 4 images
-        2. Title text (h1, h2, etc.)
-        3. Regular (paragraph) text
-        4. A logo. -->
-        <!--> Main Container<-->
-        <div class="container">
-            <!--> Header<-->
-            <!-- <header class="header"> -->
-                <div class="box header">
+        <div class="main-container">
+            <!-- Minimum requirements
+            1. At least 4 images
+            2. Title text (h1, h2, etc.)
+            3. Regular (paragraph) text
+            4. A logo. -->
+            <!-- Main container -->
+            <header>
+                <div class="header-container">
                     <!-- >Header logo -->
-                    <!-- Photo by Stefan Straka from Pexels https://www.pexels.com/photo/close-up-photography-of-white-desk-lamp-823841/ -->
-                    <!-- <img class="header-logo" src="images/logo.jpg" alt="logo"> -->
-                    <h1 class="header-title ">Alois Mbutura</h1>
-                    <p class="Occupational-role">Frontend Ninja</p>
+                    <!-- By Sebastian Thrun (www.udacity.com) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons -->
+                    <div class="header-image-container">
+                        <img class="header-logo" src="images/Udacity_logo.png   " alt="site logo">
+                    </div>
+                    <div class="header-content-container">
+                        <h1 class="header-heading ">ALOIS MBUTURA</h1>
+                        <p class="Occupational-role">Communications Engineer and Frontend Web Developer</p>
+                    </div>
+                    <hr>
                 </div>
-            <!-- </header> -->
+            </header>
             <main>
-                <!-- <div class="box image"> -->
-                    <!-- Insert background image via CSS, maintaining aspect ratio to the device viewport width -->
-                <!-- </div> -->
-                <div class="box works_heading">
+                <div class="main-image">
+                    <!-- Photo by Stefan Straka from Pexels https://www.pexels.com/photo/close-up-photography-of-white-desk-lamp-823841/ -->
+                    <img class="main-img" src="./images/logo.jpg" alt="main site image" />
+                </div>
+                <div class="work-heading-container">
                     <!-- Featured work heading -->
-                    <h2 class="Featured-work">Featured work</h2>
+                    <h2 class="featured-work-heading">Featured work</h2>
                 </div>
                 <!-- Featured work content -->
                 <!-- As the content here may be much, we limit the column content to 3 at the widest viewport and 1 at most narrow -->
                 <!-- == At much wider viewports, we add margins to limit further expansion-->
-                <div class="box img-with-text work-content-95177ffb-497c">
-                    <img class="project-img" src="./images/header-img.jpg" alt="sometext" />
-                    <a href="">First placeholder</a>
-                </div>
-                <div class="box img-with-text work-content-5af8dd52-3d2a">
-                    <img class="project-img" src="./images/header-img.jpg" alt="sometext" />
-                    <a href="">Second placeholder</a>
-                </div>
-                <div class="box img-with-text work-content-dfb2c63f-1ccf">
-                    <img class="project-img" src="./images/header-img.jpg" alt="sometext" />
-                    <a href="">Third placeholder</a>
-                </div>
+                    <ul class="project-list">
+                        <!-- There shall be only one main project item per list. This would be the project that portrays all rounded skills. -->
+                        <li class="list-item list-item-main">
+                            <div class="work-content-col-1">
+                                <!-- Photo from Alois Mbutura https://hackaday.io/project/19247/gallery#b9cdbd15ead58f2e8ea19d81b4238b10 -->
+                                <img class="project-img" src="./images/laser-interferometer.jpg" alt="laser interferometer" />
+                                <a class="entry-link" href="">Laser interferometric vibrometer</a>
+                            </div>
+                        </li>
+                        <!-- <li class="list-item list-item-col-2">
+                            <div class="work-content-col-2">
+                                <img class="project-img" src="./images/header-img.jpg" alt="sometext" />
+                                <a class="entry-link" href="">Udacity portfolio</a>
+                            </div>
+                        </li> -->
+                        <li class="list-item list-item-col-3">
+                            <div class="work-content-col-3">
+                                <img class="project-img" src="./images/africa_pcb.gif" alt="African pendant" />
+                                <a class="entry-link" href="">African LED pendant</a>
+                            </div>
+                        </li>
+                    </ul>
             </main>
+            <footer class="footer-container">
+                <p class="footer-text">All rights reserved</p>
+            </footer>
         </div>
     </body>
 </html>
