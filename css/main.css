@@ -118,7 +118,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section{
 
     .header-image-container{
         width: 20%;
-        margin-left: 0px;
+        margin-right: 0px;
         display: block;
     }
     
@@ -160,7 +160,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section{
 
     .header-image-container{
         width: 20%;
-        margin-left:inherit;
+        margin-right: 0px;
     }
     
     .header-content-container{
@@ -202,7 +202,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section{
     .list-item-col-1, .list-item-col-3{
         width: 100%;
     }
-    
+
     .header-image-container{
         width: 20%;
     }
@@ -220,12 +220,11 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section{
         text-align: right;    
     }
 
-
-    .Occupational-role{
-        text-align: right;    
+    .work-heading-container {
+            text-align: left;   
     }
 
-    .work-heading-container {
-        text-align: left;   
+    .footer-container{
+        text-align: left;
     }
 }
